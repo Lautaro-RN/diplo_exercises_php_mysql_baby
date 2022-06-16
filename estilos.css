@@ -1,0 +1,350 @@
+/*ESTILOS GENERALES*/
+
+body {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color: #E3E3E6;
+	margin:0;
+	}
+
+#contenedor {
+	width:960px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+header {
+	height:290px;
+}
+
+h1 {
+	margin:0 0 0 40px;
+	font-size:36px;
+	color:#333;	
+}
+
+a {
+	color:#80C141;
+	text-decoration:none;
+}
+
+#botonera_principal {
+	width:940px;
+	height:70px;
+	border-left: 20px solid #80C141;
+	background-color:#FFF;
+}
+
+#botonera_principal, #botones_cat ul {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+#botonera_principal ul li {
+	display: inline;
+}
+
+#botonera_principal ul li a {
+	display: inline-block;
+	color:#333;
+	text-decoration:none;
+	text-align: center;
+	border-right:1px dotted #CCC;
+	width: 179px;
+	height: 70px;
+	line-height: 70px;
+	}
+	
+#botonera_principal ul li a:hover {
+	background-color:#80C141;
+	}
+	
+#marca {
+	background-image:url(imagenes/fondo_marca.jpg);
+	height: 200px;
+	padding-top: 27px;
+	border-left:solid 20px #333;
+	}
+
+#contenido {
+	padding: 20px;
+	background-color: #FFF;
+	border-left: 20px solid #80C141;
+	float: left;
+	}
+
+h2 {
+	color: #666;
+}
+
+footer {
+	background-color: #80C141;
+	padding: 20px;
+	border-left: 20px solid #333;
+}
+
+footer a {
+	color :#FFF;
+	font-weight:bold;
+}
+
+/*ESTILOS CATEGORÍAS*/
+
+#botones_cat ul {
+	list-style-type: none;
+	margin-bottom: 5px;
+}
+
+#botones_cat ul li {
+	background-color: #333;
+	display: inline-block;
+	padding: 10px;
+	border-radius: 2px;
+}
+
+#botones_cat ul li a{
+	width: 150px;
+	display: inline;
+	text-align: center;
+	font-family: "Arial";
+	font-weight: normal;
+}
+
+#productos {
+	width: 870px;
+	height: 200px;
+	padding: 15px;
+	background-color: lightgrey;	
+}
+
+#imgp {
+	width: 150px;
+	float: right;
+}
+
+#imgp img {
+	width: 90%;
+}
+
+#prod, #prec {
+	width: 400px;
+}
+
+#car {
+	width: 700px;
+}
+
+/*ESTILOS NOTICIAS*/
+
+#noticias {
+	width: 900px;
+}
+
+.caja_nots {
+	width: 370px;
+	height: 360px;
+	margin: 25px;
+	padding: 15px;
+	/*x=400+25 y=390+25*/
+	background-color: lightgrey;
+	float: left;
+}
+
+#titulos {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#subtitulos {
+	margin-top: 5px;
+	font-size: 20px;
+}
+
+#img_noticias {
+	margin-top: 5px;
+	width: 100%;
+}
+
+#fechas {
+	margin-top: 5px;
+	text-align: right;
+	font-size: 15px;
+}
+
+/*ESTILOS CLIENTES*/
+
+#caja_clientes {
+	background-color: lightgrey;
+	width: 900px;
+}
+
+.caja_datos {
+	width: 430px;
+	height: 200px;
+	background-color: #333;
+	float: left;
+	margin: 14px 0px 0px 14px;
+}
+
+.caja_datos h3 {
+	margin-left: 10px;
+	font-size: 21px;
+	color: #80C141;
+}
+
+/*ESTILOS CONSULTA*/
+
+#caja_formulario {
+	background-color: #777;
+	height: 300px;
+	width: 900px;
+	padding-top: 10px;
+}
+
+.i {
+	margin: 10px;
+	display: block;
+	height: 20px;
+	width: 50%;
+}
+
+#tipo {
+	margin: 10px;
+	display: block;
+	height: 27px;
+	width: 50%;
+}
+
+#btn_enviar{
+	width: 25%;
+	margin-left: 10px;
+}
+
+#exito {
+	margin-left: 10px;
+	color: #FA0;
+}
+
+/*FIN ESTILOS 1024px +*/
+
+
+@media all and (min-width: 600px) and (max-width: 1023px) {
+#contenedor {
+	width:580px;
+	}
+
+header {
+	height:290px;
+	}
+
+#botonera_principal {
+	width:560px;
+	height:130px;
+}
+
+#botonera_principal ul li a {
+	width: 172px;
+	height: 60px;
+	line-height: 70px;
+	}
+
+#contenido, #noticias {
+	width: 520px;
+}
+
+#productos {
+	width: 94%;
+	height: 220px;
+	padding: 15px;	
+}
+
+#imgp {
+	width: 150px;
+	margin-left: 20px;
+}
+
+#prod, #prec {
+	width: 300px;
+}
+
+#car {
+	width: 480px;
+}
+
+.caja_nots {
+	width: 380px;
+	height: 365px;
+	float: none;
+}
+
+#caja_formulario{
+	width: 520px;
+}
+
+.i, #tipo {
+	width: 90%;
+	margin-left: 20px;
+}
+
+#btn_enviar{
+	width: 40%;
+	margin-left: 20px;
+}
+/* fin media 600 a 1023px */
+
+
+@media all and (max-width: 599px) {
+#contenedor {
+	width:90%;
+	}
+
+header {
+	height:auto;
+	}
+
+#botonera_principal {
+	width:100%;
+	height:auto;
+	box-sizing: border-box;
+	}
+
+#botonera_principal ul li {
+	display: block;
+}
+
+#botonera_principal ul li a {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	}
+
+#marca {
+	height:100px;
+	padding-top:15px;
+	padding-right: 10px;
+}
+
+#contenido {
+	width: 88.1%;
+}
+
+#productos {
+	width: 96%;
+	height:auto;
+	padding: 10px;	
+}
+
+#imgp {
+	width: 35%;
+	margin-left: 10px;
+}
+
+#prod, #prec {
+	width: 50%;
+}
+
+#car {
+	width: 85%;
+}	
+  /* fin media -599px */
